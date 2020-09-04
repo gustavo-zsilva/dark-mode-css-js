@@ -1,0 +1,25 @@
+@mixin dimensions($height, $width: false) {
+    @if $width == false {
+        width: $height;
+        height: $height;
+    }
+    @else {
+        height: $height;
+        width: $width;
+    }
+}
+
+html {
+    height: 100%;
+
+    font-family: "Montserrat", sans-serif;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    --bg: #fcfcfc;
+    --bg-panel: #ebebeb;
+    --color-headings: #0077ff;
+    --color-text: #333333; 
+}
